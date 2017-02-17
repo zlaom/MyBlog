@@ -5,19 +5,16 @@
   
 
 
-<html class="theme-next pisces use-motion" lang="zh-Hans">
+<html class="theme-next pisces use-motion">
 <head>
   <meta charset="UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
 
 
 <meta http-equiv="Cache-Control" content="no-transform" />
 <meta http-equiv="Cache-Control" content="no-siteapp" />
-
-
-
 
 
 
@@ -66,7 +63,7 @@
 
 
 
-<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
 
 <link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
@@ -99,35 +96,19 @@
 
 
 
-<script type="text/javascript" id="hexo.configurations">
+<script type="text/javascript" id="hexo.configuration">
   var NexT = window.NexT || {};
   var CONFIG = {
-    root: '/',
     scheme: 'Pisces',
-    sidebar: {"position":"left","display":"hide"},
+    sidebar: {"position":"left","display":"post"},
     fancybox: true,
     motion: true,
     duoshuo: {
-      userId: '0',
+      userId: 0,
       author: '博主'
-    },
-    algolia: {
-      applicationID: '',
-      apiKey: '',
-      indexName: '',
-      hits: {"per_page":10},
-      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
     }
   };
 </script>
-
-
-
-  <link rel="canonical" href="http://yoursite.com/page/2/"/>
-
-
-
-
 
   <title> Vtrust'Blog </title>
 </head>
@@ -135,10 +116,6 @@
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
 
   
-
-
-
-
 
 
 
@@ -170,9 +147,7 @@
       <span class="logo-line-after"><i></i></span>
     </a>
   </div>
-    
-      <p class="site-subtitle"></p>
-    
+  <p class="site-subtitle"></p>
 </div>
 
 <div class="site-nav-toggle">
@@ -233,7 +208,7 @@
       
         <li class="menu-item menu-item-search">
           
-            <a href="javascript:;" class="popup-trigger">
+            <a href="#" class="popup-trigger">
           
             
               <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
@@ -260,8 +235,6 @@
   
 </nav>
 
-
-
  </div>
     </header>
 
@@ -275,26 +248,143 @@
       
 
   
+  
 
   
   
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="http://yoursite.com/2016/10/31/MyFirstBlog/">
 
-  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <meta itemprop="name" content="vtrust">
-    <meta itemprop="description" content="">
-    <meta itemprop="image" content="/uploads/avatar.png">
-  </span>
+    
+      <header class="post-header">
 
-  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="Vtrust'Blog">
-    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
-      <img style="display:none;" itemprop="url image" alt="Vtrust'Blog" src="">
-    </span>
-  </span>
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2016/11/03/JavascriptDOM/" itemprop="url">
+                  JavascriptDOM 编程艺术
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-11-03T11:01:27+08:00" content="2016-11-03">
+              2016-11-03
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/JavaScript/" itemprop="url" rel="index">
+                    <span itemprop="name">JavaScript</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/11/03/JavascriptDOM/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/11/03/JavascriptDOM/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <hr>
+<h2 id="重要的DOM-Core方法"><a href="#重要的DOM-Core方法" class="headerlink" title="重要的DOM Core方法"></a>重要的DOM Core方法</h2><ul>
+<li>getElementById</li>
+<li>getElementByTagName</li>
+<li>getAttribute</li>
+<li>setAttribute</li>
+<li>example.setAttribute(“id”,”idName”)</li>
+</ul>
+<h2 id="DOM-Core方法和HTML-Core方法区别"><a href="#DOM-Core方法和HTML-Core方法区别" class="headerlink" title="DOM Core方法和HTML-Core方法区别"></a>DOM Core方法和HTML-Core方法区别</h2><h2 id="childNodes属性"><a href="#childNodes属性" class="headerlink" title="childNodes属性"></a>childNodes属性</h2><p>用于获取所有子元素<br></p>
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2016/11/03/JavascriptDOM/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
 
     
       <header class="post-header">
@@ -316,36 +406,24 @@
 
         <div class="post-meta">
           <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-10-31T10:36:36+08:00">
-                2016-10-31
-              </time>
-            
-
-            
-
-            
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-10-31T10:36:36+08:00" content="2016-10-31">
+              2016-10-31
+            </time>
           </span>
 
           
             <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
+              &nbsp; | &nbsp;
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
+              <span class="post-meta-item-text">分类于</span>
               
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
                   <a href="/categories/diary/" itemprop="url" rel="index">
                     <span itemprop="name">diary</span>
                   </a>
@@ -353,6 +431,7 @@
 
                 
                 
+
               
             </span>
           
@@ -360,26 +439,20 @@
           
             
               <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
+                &nbsp; | &nbsp;
                 <a href="/2016/10/31/MyFirstBlog/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/10/31/MyFirstBlog/" itemprop="commentCount"></span>
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/10/31/MyFirstBlog/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
           
 
           
+
+          
           
 
           
-
-          
-
-          
-
         </div>
       </header>
     
@@ -396,13 +469,11 @@
 <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>在百度上搜索了大量的文档后终于搭建成功，在此想总结一下整个hexo blog的搭建过程。</p>
 <h2 id="安装Git"><a href="#安装Git" class="headerlink" title="安装Git"></a>安装Git</h2><p>直接到<a href="https://git-scm.com/downloads">Git</a>的官网下载安装即可， 对于Git教程的话可以参考廖雪峰的<a href="http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/">git教程</a>。</p>
 <h2 id="Git安装问题"><a href="#Git安装问题" class="headerlink" title="Git安装问题"></a>Git安装问题</h2><p>“git”不是内部指令<br><img src="/2016/10/31/MyFirstBlog/pathSet1.png" width="500"><br></p>
-          <!--noindex-->
-          <div class="post-button text-center">
+          <div class="post-more-link text-center">
             <a class="btn" href="/2016/10/31/MyFirstBlog/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
-          <!--/noindex-->
         
       
     </div>
@@ -415,10 +486,7 @@
       
     </div>
 
-
     <footer class="post-footer">
-      
-
       
 
       
@@ -435,26 +503,13 @@
       
 
   
+  
 
   
   
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="http://yoursite.com/2016/10/30/hello-world/">
-
-  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <meta itemprop="name" content="vtrust">
-    <meta itemprop="description" content="">
-    <meta itemprop="image" content="/uploads/avatar.png">
-  </span>
-
-  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="Vtrust'Blog">
-    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
-      <img style="display:none;" itemprop="url image" alt="Vtrust'Blog" src="">
-    </span>
-  </span>
 
     
       <header class="post-header">
@@ -476,21 +531,13 @@
 
         <div class="post-meta">
           <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-10-30T10:36:36+08:00">
-                2016-10-30
-              </time>
-            
-
-            
-
-            
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-10-30T10:36:36+08:00" content="2016-10-30">
+              2016-10-30
+            </time>
           </span>
 
           
@@ -498,26 +545,20 @@
           
             
               <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
+                &nbsp; | &nbsp;
                 <a href="/2016/10/30/hello-world/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/10/30/hello-world/" itemprop="commentCount"></span>
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/10/30/hello-world/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
           
 
           
+
+          
           
 
           
-
-          
-
-          
-
         </div>
       </header>
     
@@ -533,13 +574,11 @@
           <p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
 <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
 <p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a><br></p>
-          <!--noindex-->
-          <div class="post-button text-center">
+          <div class="post-more-link text-center">
             <a class="btn" href="/2016/10/30/hello-world/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
-          <!--/noindex-->
         
       
     </div>
@@ -552,10 +591,7 @@
       
     </div>
 
-
     <footer class="post-footer">
-      
-
       
 
       
@@ -577,7 +613,7 @@
   </nav>
 
 
-          
+
           </div>
           
 
@@ -603,7 +639,7 @@
 
       
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel  sidebar-panel-active ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/uploads/avatar.png"
@@ -612,20 +648,17 @@
           <p class="site-description motion-element" itemprop="description">路漫漫其修远兮,吾将上下而求索。</p>
         </div>
         <nav class="site-state motion-element">
-        
-          
-            <div class="site-state-item site-state-posts">
-              <a href="/archives">
-                <span class="site-state-item-count">5</span>
-                <span class="site-state-item-name">日志</span>
-              </a>
-            </div>
-          
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">6</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
 
           
             <div class="site-state-item site-state-categories">
               
-                <span class="site-state-item-count">4</span>
+                <span class="site-state-item-count">5</span>
                 <span class="site-state-item-name">分类</span>
               
             </div>
@@ -634,7 +667,7 @@
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">4</span>
+                <span class="site-state-item-count">5</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
@@ -665,9 +698,6 @@
         
         
 
-        
-
-
       </section>
 
       
@@ -692,9 +722,8 @@
   <span class="author" itemprop="copyrightHolder">vtrust</span>
 </div>
 
-
 <div class="powered-by">
-  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+  由 <a class="theme-link" href="http://hexo.io">Hexo</a> 强力驱动
 </div>
 
 <div class="theme-info">
@@ -703,7 +732,6 @@
     NexT.Pisces
   </a>
 </div>
-
 
         
 
@@ -733,7 +761,6 @@
 
 
   
-
 
 
 
@@ -805,18 +832,7 @@
 
   
     
-    
-    <script src="/lib/ua-parser-js/dist/ua-parser.min.js?v=0.7.9"></script>
-    <script src="/js/src/hook-duoshuo.js"></script>
   
-
-
-
-
-
-
-
-
 
 
 
@@ -830,7 +846,7 @@
     // Search DB path;
     var search_path = "search.xml";
     if (search_path.length == 0) {
-      search_path = "search.xml";
+       search_path = "search.xml";
     }
     var path = "/" + search_path;
     // monitor main search box;
@@ -838,104 +854,109 @@
     function proceedsearch() {
       $("body").append('<div class="popoverlay">').css('overflow', 'hidden');
       $('.popup').toggle();
+
     }
     // search function;
     var searchFunc = function(path, search_id, content_id) {
-      'use strict';
-      $.ajax({
+    'use strict';
+    $.ajax({
         url: path,
         dataType: "xml",
         async: true,
         success: function( xmlResponse ) {
-          // get the contents from search data
-          isfetched = true;
-          $('.popup').detach().appendTo('.header-inner');
-          var datas = $( "entry", xmlResponse ).map(function() {
-            return {
-              title: $( "title", this ).text(),
-              content: $("content",this).text(),
-              url: $( "url" , this).text()
-            };
-          }).get();
-          var $input = document.getElementById(search_id);
-          var $resultContent = document.getElementById(content_id);
-          $input.addEventListener('input', function(){
-            var matchcounts = 0;
-            var str='<ul class=\"search-result-list\">';
-            var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
-            $resultContent.innerHTML = "";
-            if (this.value.trim().length > 1) {
-              // perform local searching
-              datas.forEach(function(data) {
-                var isMatch = false;
-                var content_index = [];
-                var data_title = data.title.trim().toLowerCase();
-                var data_content = data.content.trim().replace(/<[^>]+>/g,"").toLowerCase();
-                var data_url = decodeURIComponent(data.url);
-                var index_title = -1;
-                var index_content = -1;
-                var first_occur = -1;
-                // only match artiles with not empty titles and contents
-                if(data_title != '') {
-                  keywords.forEach(function(keyword, i) {
-                    index_title = data_title.indexOf(keyword);
-                    index_content = data_content.indexOf(keyword);
-                    if( index_title >= 0 || index_content >= 0 ){
-                      isMatch = true;
-                      if (i == 0) {
-                        first_occur = index_content;
-                      }
+            // get the contents from search data
+            isfetched = true;
+            $('.popup').detach().appendTo('.header-inner');
+            var datas = $( "entry", xmlResponse ).map(function() {
+                return {
+                    title: $( "title", this ).text(),
+                    content: $("content",this).text(),
+                    url: $( "url" , this).text()
+                };
+            }).get();
+            var $input = document.getElementById(search_id);
+            var $resultContent = document.getElementById(content_id);
+            $input.addEventListener('input', function(){
+                var matchcounts = 0;
+                var str='<ul class=\"search-result-list\">';                
+                var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                $resultContent.innerHTML = "";
+                if (this.value.trim().length > 1) {
+                // perform local searching
+                datas.forEach(function(data) {
+                    var isMatch = true;
+                    var content_index = [];
+                    var data_title = data.title.trim().toLowerCase();
+                    var data_content = data.content.trim().replace(/<[^>]+>/g,"").toLowerCase();
+                    var data_url = data.url;
+                    var index_title = -1;
+                    var index_content = -1;
+                    var first_occur = -1;
+                    // only match artiles with not empty titles and contents
+                    if(data_title != '' && data_content != '') {
+                        keywords.forEach(function(keyword, i) {
+                            index_title = data_title.indexOf(keyword);
+                            index_content = data_content.indexOf(keyword);
+                            if( index_title < 0 && index_content < 0 ){
+                                isMatch = false;
+                            } else {
+                                if (index_content < 0) {
+                                    index_content = 0;
+                                }
+                                if (i == 0) {
+                                    first_occur = index_content;
+                                }
+                            }
+                        });
                     }
-
-                  });
-                }
-                // show search results
-                if (isMatch) {
-                  matchcounts += 1;
-                  str += "<li><a href='"+ data_url +"' class='search-result-title'>"+ data_title +"</a>";
-                  var content = data.content.trim().replace(/<[^>]+>/g,"");
-                  if (first_occur >= 0) {
-                    // cut out 100 characters
-                    var start = first_occur - 20;
-                    var end = first_occur + 80;
-                    if(start < 0){
-                      start = 0;
+                    // show search results
+                    if (isMatch) {
+                        matchcounts += 1;
+                        str += "<li><a href='"+ data_url +"' class='search-result-title'>"+ data_title +"</a>";
+                        var content = data.content.trim().replace(/<[^>]+>/g,"");
+                        if (first_occur >= 0) {
+                            // cut out 100 characters
+                            var start = first_occur - 20;
+                            var end = first_occur + 80;
+                            if(start < 0){
+                                start = 0;
+                            }
+                            if(start == 0){
+                                end = 50;
+                            }
+                            if(end > content.length){
+                                end = content.length;
+                            }
+                            var match_content = content.substring(start, end);
+                            // highlight all keywords
+                            keywords.forEach(function(keyword){
+                                var regS = new RegExp(keyword, "gi");
+                                match_content = match_content.replace(regS, "<b class=\"search-keyword\">"+keyword+"</b>");
+                            });
+                            
+                            str += "<p class=\"search-result\">" + match_content +"...</p>"
+                        }
+                        str += "</li>";
                     }
-                    if(start == 0){
-                      end = 50;
-                    }
-                    if(end > content.length){
-                      end = content.length;
-                    }
-                    var match_content = content.substring(start, end);
-                    // highlight all keywords
-                    keywords.forEach(function(keyword){
-                      var regS = new RegExp(keyword, "gi");
-                      match_content = match_content.replace(regS, "<b class=\"search-keyword\">"+keyword+"</b>");
-                    });
-
-                    str += "<p class=\"search-result\">" + match_content +"...</p>"
-                  }
-                  str += "</li>";
-                }
-              })};
-            str += "</ul>";
-            if (matchcounts == 0) { str = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>' }
-            if (keywords == "") { str = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>' }
-            $resultContent.innerHTML = str;
-          });
-          proceedsearch();
+                })};
+                str += "</ul>";
+                if (matchcounts == 0) { str = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>' }
+                if (keywords == "") { str = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>' }
+                $resultContent.innerHTML = str;
+            });
+            proceedsearch();
         }
-      });}
+    });}
 
     // handle and trigger popup window;
-    $('.popup-trigger').click(function(e) {
+    $('.popup-trigger').mousedown(function(e) {
       e.stopPropagation();
       if (isfetched == false) {
         searchFunc(path, 'local-search-input', 'local-search-result');
       } else {
         proceedsearch();
       };
+
     });
 
     $('.popup-btn-close').click(function(e){
@@ -948,15 +969,11 @@
     });
   </script>
 
-
   
 
   
 
   
-
-  
-
 
 </body>
 </html>

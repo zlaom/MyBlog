@@ -5,19 +5,16 @@
   
 
 
-<html class="theme-next pisces use-motion" lang="zh-Hans">
+<html class="theme-next pisces use-motion">
 <head>
   <meta charset="UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
 
 
 <meta http-equiv="Cache-Control" content="no-transform" />
 <meta http-equiv="Cache-Control" content="no-siteapp" />
-
-
-
 
 
 
@@ -66,7 +63,7 @@
 
 
 
-<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
 
 <link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
@@ -107,7 +104,7 @@ setAttribute
 example.setAttribute(“id”,”idName”)
 
 DOM Core方法和HTML-Core方法区别childNodes属性用于获取所有子元素">
-<meta property="og:updated_time" content="2017-02-15T04:39:54.526Z">
+<meta property="og:updated_time" content="2017-02-16T11:14:55.645Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="JavascriptDOM 编程艺术">
 <meta name="twitter:description" content="重要的DOM Core方法
@@ -121,35 +118,19 @@ DOM Core方法和HTML-Core方法区别childNodes属性用于获取所有子元�
 
 
 
-<script type="text/javascript" id="hexo.configurations">
+<script type="text/javascript" id="hexo.configuration">
   var NexT = window.NexT || {};
   var CONFIG = {
-    root: '/',
     scheme: 'Pisces',
-    sidebar: {"position":"left","display":"hide"},
+    sidebar: {"position":"left","display":"post"},
     fancybox: true,
     motion: true,
     duoshuo: {
-      userId: '0',
+      userId: 0,
       author: '博主'
-    },
-    algolia: {
-      applicationID: '',
-      apiKey: '',
-      indexName: '',
-      hits: {"per_page":10},
-      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
     }
   };
 </script>
-
-
-
-  <link rel="canonical" href="http://yoursite.com/2016/11/03/JavascriptDOM/"/>
-
-
-
-
 
   <title> JavascriptDOM 编程艺术 | Vtrust'Blog </title>
 </head>
@@ -157,10 +138,6 @@ DOM Core方法和HTML-Core方法区别childNodes属性用于获取所有子元�
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
 
   
-
-
-
-
 
 
 
@@ -190,9 +167,7 @@ DOM Core方法和HTML-Core方法区别childNodes属性用于获取所有子元�
       <span class="logo-line-after"><i></i></span>
     </a>
   </div>
-    
-      <p class="site-subtitle"></p>
-    
+  <p class="site-subtitle"></p>
 </div>
 
 <div class="site-nav-toggle">
@@ -253,7 +228,7 @@ DOM Core方法和HTML-Core方法区别childNodes属性用于获取所有子元�
       
         <li class="menu-item menu-item-search">
           
-            <a href="javascript:;" class="popup-trigger">
+            <a href="#" class="popup-trigger">
           
             
               <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
@@ -280,8 +255,6 @@ DOM Core方法和HTML-Core方法区别childNodes属性用于获取所有子元�
   
 </nav>
 
-
-
  </div>
     </header>
 
@@ -295,26 +268,13 @@ DOM Core方法和HTML-Core方法区别childNodes属性用于获取所有子元�
     
 
   
+  
 
   
   
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="http://yoursite.com/2016/11/03/JavascriptDOM/">
-
-  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <meta itemprop="name" content="vtrust">
-    <meta itemprop="description" content="">
-    <meta itemprop="image" content="/uploads/avatar.png">
-  </span>
-
-  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="Vtrust'Blog">
-    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
-      <img style="display:none;" itemprop="url image" alt="Vtrust'Blog" src="">
-    </span>
-  </span>
 
     
       <header class="post-header">
@@ -333,36 +293,24 @@ DOM Core方法和HTML-Core方法区别childNodes属性用于获取所有子元�
 
         <div class="post-meta">
           <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-11-03T11:01:27+08:00">
-                2016-11-03
-              </time>
-            
-
-            
-
-            
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-11-03T11:01:27+08:00" content="2016-11-03">
+              2016-11-03
+            </time>
           </span>
 
           
             <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
+              &nbsp; | &nbsp;
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
+              <span class="post-meta-item-text">分类于</span>
               
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
                   <a href="/categories/JavaScript/" itemprop="url" rel="index">
                     <span itemprop="name">JavaScript</span>
                   </a>
@@ -370,6 +318,7 @@ DOM Core方法和HTML-Core方法区别childNodes属性用于获取所有子元�
 
                 
                 
+
               
             </span>
           
@@ -377,26 +326,20 @@ DOM Core方法和HTML-Core方法区别childNodes属性用于获取所有子元�
           
             
               <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
+                &nbsp; | &nbsp;
                 <a href="/2016/11/03/JavascriptDOM/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/11/03/JavascriptDOM/" itemprop="commentCount"></span>
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/11/03/JavascriptDOM/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
           
 
           
+
+          
           
 
           
-
-          
-
-          
-
         </div>
       </header>
     
@@ -469,7 +412,6 @@ DOM Core方法和HTML-Core方法区别childNodes属性用于获取所有子元�
     <div>
       
         
-
       
     </div>
 
@@ -480,18 +422,13 @@ DOM Core方法和HTML-Core方法区别childNodes属性用于获取所有子元�
       
     </div>
 
-
     <footer class="post-footer">
       
         <div class="post-tags">
           
-            <a href="/tags/JavaScript/" rel="tag"># JavaScript</a>
+            <a href="/tags/JavaScript/" rel="tag">#JavaScript</a>
           
         </div>
-      
-
-      
-        
       
 
       
@@ -503,8 +440,6 @@ DOM Core方法和HTML-Core方法区别childNodes属性用于获取所有子元�
               </a>
             
           </div>
-
-          <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
             
@@ -528,7 +463,7 @@ DOM Core方法和HTML-Core方法区别childNodes属性用于获取所有子元�
     </div>
   </div>
 
-          
+
           </div>
           
 
@@ -571,7 +506,7 @@ DOM Core方法和HTML-Core方法区别childNodes属性用于获取所有子元�
         </ul>
       
 
-      <section class="site-overview sidebar-panel">
+      <section class="site-overview sidebar-panel ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/uploads/avatar.png"
@@ -580,20 +515,17 @@ DOM Core方法和HTML-Core方法区别childNodes属性用于获取所有子元�
           <p class="site-description motion-element" itemprop="description">路漫漫其修远兮,吾将上下而求索。</p>
         </div>
         <nav class="site-state motion-element">
-        
-          
-            <div class="site-state-item site-state-posts">
-              <a href="/archives">
-                <span class="site-state-item-count">5</span>
-                <span class="site-state-item-name">日志</span>
-              </a>
-            </div>
-          
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">6</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
 
           
             <div class="site-state-item site-state-categories">
               
-                <span class="site-state-item-count">4</span>
+                <span class="site-state-item-count">5</span>
                 <span class="site-state-item-name">分类</span>
               
             </div>
@@ -602,7 +534,7 @@ DOM Core方法和HTML-Core方法区别childNodes属性用于获取所有子元�
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">4</span>
+                <span class="site-state-item-count">5</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
@@ -633,27 +565,19 @@ DOM Core方法和HTML-Core方法区别childNodes属性用于获取所有子元�
         
         
 
-        
-
-
       </section>
 
       
-      <!--noindex-->
         <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
           <div class="post-toc">
-
             
               
             
-
             
               <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#重要的DOM-Core方法"><span class="nav-number">1.</span> <span class="nav-text">重要的DOM Core方法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#DOM-Core方法和HTML-Core方法区别"><span class="nav-number">2.</span> <span class="nav-text">DOM Core方法和HTML-Core方法区别</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#childNodes属性"><span class="nav-number">3.</span> <span class="nav-text">childNodes属性</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#nodeType属性"><span class="nav-number">4.</span> <span class="nav-text">nodeType属性</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#nodeValue属性"><span class="nav-number">5.</span> <span class="nav-text">nodeValue属性</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#三个重要的函数"><span class="nav-number">6.</span> <span class="nav-text">三个重要的函数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#innerHTML属性"><span class="nav-number">7.</span> <span class="nav-text">innerHTML属性</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#createElement方法"><span class="nav-number">8.</span> <span class="nav-text">createElement方法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#appendChild方法"><span class="nav-number">9.</span> <span class="nav-text">appendChild方法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#createTextNode方法"><span class="nav-number">10.</span> <span class="nav-text">createTextNode方法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#insertBefore方法"><span class="nav-number">11.</span> <span class="nav-text">insertBefore方法</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#三要素"><span class="nav-number">11.1.</span> <span class="nav-text">三要素</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#nextSibling属性"><span class="nav-number">12.</span> <span class="nav-text">nextSibling属性</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#for-key-in-defs"><span class="nav-number">13.</span> <span class="nav-text">for(key in defs){}</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#用DOM技术访问font-family"><span class="nav-number">14.</span> <span class="nav-text">用DOM技术访问font-family</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#设置表格奇数和偶数行样式的方法"><span class="nav-number">15.</span> <span class="nav-text">设置表格奇数和偶数行样式的方法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#import-url"><span class="nav-number">16.</span> <span class="nav-text">@import url()</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#HTML-DOM-form对象"><span class="nav-number">17.</span> <span class="nav-text">HTML DOM form对象</span></a></li></ol></div>
             
-
           </div>
         </section>
-      <!--/noindex-->
       
 
     </div>
@@ -676,9 +600,8 @@ DOM Core方法和HTML-Core方法区别childNodes属性用于获取所有子元�
   <span class="author" itemprop="copyrightHolder">vtrust</span>
 </div>
 
-
 <div class="powered-by">
-  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+  由 <a class="theme-link" href="http://hexo.io">Hexo</a> 强力驱动
 </div>
 
 <div class="theme-info">
@@ -687,7 +610,6 @@ DOM Core方法和HTML-Core方法区别childNodes属性用于获取所有子元�
     NexT.Pisces
   </a>
 </div>
-
 
         
 
@@ -717,7 +639,6 @@ DOM Core方法和HTML-Core方法区别childNodes属性用于获取所有子元�
 
 
   
-
 
 
 
@@ -793,18 +714,7 @@ DOM Core方法和HTML-Core方法区别childNodes属性用于获取所有子元�
 
   
     
-    
-    <script src="/lib/ua-parser-js/dist/ua-parser.min.js?v=0.7.9"></script>
-    <script src="/js/src/hook-duoshuo.js"></script>
   
-
-
-
-
-
-
-
-
 
 
 
@@ -818,7 +728,7 @@ DOM Core方法和HTML-Core方法区别childNodes属性用于获取所有子元�
     // Search DB path;
     var search_path = "search.xml";
     if (search_path.length == 0) {
-      search_path = "search.xml";
+       search_path = "search.xml";
     }
     var path = "/" + search_path;
     // monitor main search box;
@@ -826,104 +736,109 @@ DOM Core方法和HTML-Core方法区别childNodes属性用于获取所有子元�
     function proceedsearch() {
       $("body").append('<div class="popoverlay">').css('overflow', 'hidden');
       $('.popup').toggle();
+
     }
     // search function;
     var searchFunc = function(path, search_id, content_id) {
-      'use strict';
-      $.ajax({
+    'use strict';
+    $.ajax({
         url: path,
         dataType: "xml",
         async: true,
         success: function( xmlResponse ) {
-          // get the contents from search data
-          isfetched = true;
-          $('.popup').detach().appendTo('.header-inner');
-          var datas = $( "entry", xmlResponse ).map(function() {
-            return {
-              title: $( "title", this ).text(),
-              content: $("content",this).text(),
-              url: $( "url" , this).text()
-            };
-          }).get();
-          var $input = document.getElementById(search_id);
-          var $resultContent = document.getElementById(content_id);
-          $input.addEventListener('input', function(){
-            var matchcounts = 0;
-            var str='<ul class=\"search-result-list\">';
-            var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
-            $resultContent.innerHTML = "";
-            if (this.value.trim().length > 1) {
-              // perform local searching
-              datas.forEach(function(data) {
-                var isMatch = false;
-                var content_index = [];
-                var data_title = data.title.trim().toLowerCase();
-                var data_content = data.content.trim().replace(/<[^>]+>/g,"").toLowerCase();
-                var data_url = decodeURIComponent(data.url);
-                var index_title = -1;
-                var index_content = -1;
-                var first_occur = -1;
-                // only match artiles with not empty titles and contents
-                if(data_title != '') {
-                  keywords.forEach(function(keyword, i) {
-                    index_title = data_title.indexOf(keyword);
-                    index_content = data_content.indexOf(keyword);
-                    if( index_title >= 0 || index_content >= 0 ){
-                      isMatch = true;
-                      if (i == 0) {
-                        first_occur = index_content;
-                      }
+            // get the contents from search data
+            isfetched = true;
+            $('.popup').detach().appendTo('.header-inner');
+            var datas = $( "entry", xmlResponse ).map(function() {
+                return {
+                    title: $( "title", this ).text(),
+                    content: $("content",this).text(),
+                    url: $( "url" , this).text()
+                };
+            }).get();
+            var $input = document.getElementById(search_id);
+            var $resultContent = document.getElementById(content_id);
+            $input.addEventListener('input', function(){
+                var matchcounts = 0;
+                var str='<ul class=\"search-result-list\">';                
+                var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                $resultContent.innerHTML = "";
+                if (this.value.trim().length > 1) {
+                // perform local searching
+                datas.forEach(function(data) {
+                    var isMatch = true;
+                    var content_index = [];
+                    var data_title = data.title.trim().toLowerCase();
+                    var data_content = data.content.trim().replace(/<[^>]+>/g,"").toLowerCase();
+                    var data_url = data.url;
+                    var index_title = -1;
+                    var index_content = -1;
+                    var first_occur = -1;
+                    // only match artiles with not empty titles and contents
+                    if(data_title != '' && data_content != '') {
+                        keywords.forEach(function(keyword, i) {
+                            index_title = data_title.indexOf(keyword);
+                            index_content = data_content.indexOf(keyword);
+                            if( index_title < 0 && index_content < 0 ){
+                                isMatch = false;
+                            } else {
+                                if (index_content < 0) {
+                                    index_content = 0;
+                                }
+                                if (i == 0) {
+                                    first_occur = index_content;
+                                }
+                            }
+                        });
                     }
-
-                  });
-                }
-                // show search results
-                if (isMatch) {
-                  matchcounts += 1;
-                  str += "<li><a href='"+ data_url +"' class='search-result-title'>"+ data_title +"</a>";
-                  var content = data.content.trim().replace(/<[^>]+>/g,"");
-                  if (first_occur >= 0) {
-                    // cut out 100 characters
-                    var start = first_occur - 20;
-                    var end = first_occur + 80;
-                    if(start < 0){
-                      start = 0;
+                    // show search results
+                    if (isMatch) {
+                        matchcounts += 1;
+                        str += "<li><a href='"+ data_url +"' class='search-result-title'>"+ data_title +"</a>";
+                        var content = data.content.trim().replace(/<[^>]+>/g,"");
+                        if (first_occur >= 0) {
+                            // cut out 100 characters
+                            var start = first_occur - 20;
+                            var end = first_occur + 80;
+                            if(start < 0){
+                                start = 0;
+                            }
+                            if(start == 0){
+                                end = 50;
+                            }
+                            if(end > content.length){
+                                end = content.length;
+                            }
+                            var match_content = content.substring(start, end);
+                            // highlight all keywords
+                            keywords.forEach(function(keyword){
+                                var regS = new RegExp(keyword, "gi");
+                                match_content = match_content.replace(regS, "<b class=\"search-keyword\">"+keyword+"</b>");
+                            });
+                            
+                            str += "<p class=\"search-result\">" + match_content +"...</p>"
+                        }
+                        str += "</li>";
                     }
-                    if(start == 0){
-                      end = 50;
-                    }
-                    if(end > content.length){
-                      end = content.length;
-                    }
-                    var match_content = content.substring(start, end);
-                    // highlight all keywords
-                    keywords.forEach(function(keyword){
-                      var regS = new RegExp(keyword, "gi");
-                      match_content = match_content.replace(regS, "<b class=\"search-keyword\">"+keyword+"</b>");
-                    });
-
-                    str += "<p class=\"search-result\">" + match_content +"...</p>"
-                  }
-                  str += "</li>";
-                }
-              })};
-            str += "</ul>";
-            if (matchcounts == 0) { str = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>' }
-            if (keywords == "") { str = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>' }
-            $resultContent.innerHTML = str;
-          });
-          proceedsearch();
+                })};
+                str += "</ul>";
+                if (matchcounts == 0) { str = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>' }
+                if (keywords == "") { str = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>' }
+                $resultContent.innerHTML = str;
+            });
+            proceedsearch();
         }
-      });}
+    });}
 
     // handle and trigger popup window;
-    $('.popup-trigger').click(function(e) {
+    $('.popup-trigger').mousedown(function(e) {
       e.stopPropagation();
       if (isfetched == false) {
         searchFunc(path, 'local-search-input', 'local-search-result');
       } else {
         proceedsearch();
       };
+
     });
 
     $('.popup-btn-close').click(function(e){
@@ -936,15 +851,11 @@ DOM Core方法和HTML-Core方法区别childNodes属性用于获取所有子元�
     });
   </script>
 
-
   
 
   
 
   
-
-  
-
 
 </body>
 </html>
